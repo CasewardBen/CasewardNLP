@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>文本聚类-Caseward-NLP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="word_property" id="logo">词性标注</a></h1>
+								<p><a href="index" id="logo">Caseward-NLP</a></p>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="cluster">文本聚类</a></li>
+								<li>
+									<a href="sentiment_analysis">情感分析</a>
+								</li>
+								<!-- <li><a href="classify">文本分类</a></li> -->
+								<li><a href="word_property">词性标注</a></li>
+								<li><a href="keyword">关键词标注</a></li>
+								<li><a>其他</a></li>
+							</ul>
+						</nav>
+
+				</div>
+			
+			<!--cutword-->
+			<div class = "container" style = "margin-bottom: 30px; margin-top:20px;">
+				
+				<div class="row">
+					<textarea id="textbody" class="form-control col-10" style = "margin-left:50px; margin-top: 50px;width:35%;border-radius: 0.5em;" rows="5" cols="10" placeholder="请输入待分词的句子"></textarea>
+					<div>
+						<button id ="button-cutword" style = "margin-left:40px;font-size: 20px; margin-top: 80px;">分词</button>
+					</div>
+					<textarea id="cutwordResult" class="form-control col-10" style = "margin-top: 50px;width:35%;margin-left: 80px;border-radius: 0.5em;" rows="5" cols="10"></textarea>
+				</div>
+				
+			</div>
+			
+			<!--显示词性分析结果-->
+			<div>
+				<div class="container" style="margin-top: 30px;">
+					<p style="margin-left: 30px;">词性标签</p>
+				</div>
+				<div class="container">
+					<div style="margin-left:30px;">
+						<button style="background-color:#ef7006">名词</button>
+						<button style="background-color:#ef5006">动词</button>
+						<button style="background-color:#ef8006">形容词</button>
+						<button style="background-color:#ef1706">数词</button>
+						<button style="background-color:#ef3376">副词</button>
+						<button style="background-color:#bb4706">介词</button>
+						<button style="background-color:#ef7376">连词</button>
+						<button style="background-color:#ef4116">叹词</button>
+						<button style="background-color:#ef5706">量词</button>
+						<button style="background-color:#ef3706">状态词</button>
+						<button style="background-color:#ef2406">助词</button>
+						<button style="background-color:#ef4376">标点</button>
+					</div>
+				</div>
+				<div class="container" style="margin-top: 30px;">
+					<p style="margin-left: 30px;">词性分析结果</p>
+				</div>
+				<div class="container" style="margin-top:30px;">
+					<div id="container" style="margin-left: 30px;margin-bottom: 50px;"></div>
+				</div>
+			</div>
+
+			<!-- bottom nav -->
+			<div class="wrapper style1">
+				<!-- Carousel -->
+				<section class="carousel">
+					<div class="reel">
+
+						<article>
+							<a href="cluster" class="image featured"><img src="static/images/01.jpg" alt="" /></a>
+							<header>
+								<h3><a href="cluster">文本聚类</a></h3>
+							</header>
+							<p>这是一个提供文本聚类功能的模块。</p>
+						</article>
+
+						<article>
+							<a href="sentiment_analysis" class="image featured"><img src="static/images/02.jpg" alt="" /></a>
+							<header>
+								<h3><a href="sentiment_analysis">情感分析</a></h3>
+							</header>
+							<p>这是一个提供情感分析功能的模块。</p>
+						</article>
+
+						<!-- <article>
+							<a href="classify" class="image featured"><img src="static/images/03.jpg" alt="" /></a>
+							<header>
+								<h3><a href="classify">文本分类</a></h3>
+							</header>
+							<p>这是一个提供文本分类功能的模块。</p>
+						</article> -->
+
+						<article>
+							<a href="word_property" class="image featured"><img src="static/images/04.jpg" alt="" /></a>
+							<header>
+								<h3><a href="word_property">词性标注</a></h3>
+							</header>
+							<p>这是一个提供词性标注功能的模块。</p>
+						</article>
+
+						<article>
+							<a href="keyword" class="image featured"><img src="static/images/05.jpg" alt="" /></a>
+							<header>
+								<h3><a href="keyword">关键词提取</a></h3>
+							</header>
+							<p>这是提供关键词提取功能的模块。</p>
+						</article>
+
+						<article>
+							<a  class="image featured"><img src="static/images/06.jpg" alt="" /></a>
+							<header>
+								<h3><a >其他</a></h3>
+							</header>
+							<p>这是一个提供其他功能的模块。</p>
+						</article>
+
+
+					</div>
+				</section>
+			</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Caseward-NLP</h3>
+										</header>
+										<p>这是一个自然语言处理的试验平台。</p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+			<script>
+				 $(document).ready(function(){
+					$('#textbody').on('input propertychange', function() {
+						var theText = $(this).val();
+						allText = theText;
+						$('#textbody').html(allText);
+					});
+				}); 
+				var sentence = $("#textbody").text();
+				// console.log(sentence);
+				console.log("get in !");
+				
+				$("#button-cutword").click(function () {
+					var data={'sentence':$("#textbody").text()};
+					console.log(data);
+					$.ajax({
+						url :"/word_property/get_cutword",
+						type: 'get',
+						data:data,
+						success:function (detail) {
+							console.log("detail");
+							console.log(detail);
+							$('#cutwordResult').html(detail[0]['cutSentence']);
+							wordDict = detail[1];
+							propertyDict = detail[2];
+							console.log(wordDict);
+							console.log(Object.keys(wordDict).length);
+							theLen = Object.keys(wordDict).length;
+							for (i=0;i<theLen;i++){
+								theColor='';
+								if(propertyDict[i]=="v"){
+									//动词
+									theColor = 'style="background-color:#ef5006"';
+								}
+								else if(propertyDict[i]=="n"){
+									//名词
+									theColor = 'style="background-color:#ef7006"';
+								}
+								else if(propertyDict[i]=="d"){
+									//副词
+									theColor = 'style="background-color:#ef3376"';
+								}
+								else if(propertyDict[i]=="a"){
+									//形容词
+									theColor = 'style="background-color:#ef8006"';
+								}
+								else if(propertyDict[i]=="w"){
+									//标点符号
+									theColor = 'style="background-color:#ef4376"';
+								}
+								else if(propertyDict[i]=="c"){
+									//连词
+									theColor = 'style="background-color:#ef7376"';
+								}
+								else if(propertyDict[i]=="u"){
+									//助词
+									theColor = 'style="background-color:#ef2406"';
+								}
+								else if(propertyDict[i]=="z"){
+									//状态词
+									theColor = 'style="background-color:#ef3706"';
+								}
+								else if(propertyDict[i]=="m"){
+									//数词
+									theColor = 'style="background-color:#ef1706"';
+								}
+								else if(propertyDict[i]=="q"){
+									//量词
+									theColor = 'style="background-color:#ef5706"';
+								}
+								else if(propertyDict[i]=="p"){
+									//介词
+									theColor = 'style="background-color:#pp4706"';
+								}
+								else if(propertyDict[i]=="e"){
+									//叹词
+									theColor = 'style="background-color:#ef4116"';
+								}
+								var b= $('<button id="'+propertyDict[i]+'"'+theColor+'>'+wordDict[i]+'</button>');
+								console.log(b);
+								$("#container").append(b);
+								// $("#n").css({"background-color":"#ef7006"});
+								// $("#v").css({"background-color":"#ef5006"});
+								// $("#r").css({"background-color":"#ef6376"});
+								// $("#u").css({"background-color":"#ef5376"});
+								// $("#w").css({"background-color":"#ef4376"});
+								// $("#d").css({"background-color":"#ef3376"});
+								// $("#a").css({"background-color":"#ef2376"});
+								// $("#r").css({"background-color":"#ef8006"});
+							}
+							
+						}
+					});
+					console.log("click");
+					var sentence = $("#textbody").text();
+					//$('#cutwordResult').html(sentence);
+					var testSentence = $('#cutwordResult').text()
+					console.log(sentence);
+					
+				});
+				
+			</script>
+
+	</body>
+</html>
